@@ -2,6 +2,8 @@
 getJarList <- function(){
 
   jarList <- list(
+    #Main jar
+    "RunKeel.jar",
     #Classification
     "Ensembles-I.jar", #AdaBoost.NC-C
     "ART.jar",
