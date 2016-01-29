@@ -1,10 +1,10 @@
-78195c7c2ecb9f5d402d08fd6b1c8744 *DESCRIPTION
-b007b6f5cded8189987cd255f6bc8076 *NAMESPACE
+d36653ecd497a494124a74207e7151fa *DESCRIPTION
+9c3fb36de895c34501e1046575b8af52 *NAMESPACE
 a696f89e0e3d73ef26ae62535c39be52 *R/getExePath.R
 58259ebb2718eccaaad1b695318c4741 *R/getJarList.R
 a7e015d3ba7f6448d37745ece8ccbc99 *R/getJarPath.R
-ae42dd527883460ed24d4d0e025d6f9d *R/zzz.R
-411e6e37b1186200b7cbd33d04be9ffe *inst/exe/Readme.txt
+efcdc912a37e88b88b2eccd56b2f2f49 *R/zzz.R
+d221a5ca3df4bc30af34cd4095c98d1c *inst/exe/Readme.txt
 c31e5367a5860e89019d60f388ed93bf *java/Readme.txt
 4dfd59ec2414c4ae329f0d4525bd09d4 *man/getExePath.Rd
 a72f4de5637302cda03dd218b6a21c41 *man/getJarList.Rd
