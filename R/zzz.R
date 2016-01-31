@@ -21,13 +21,13 @@
     downloader::download(url = "http://www.uco.es/~i02momuj/RKEELjars.zip", destfile = downloadedFile)
 
     #If download failed, download from other mirror
-    if(file.size(downloadedFile) < 1000000){
+    if(file.info(downloadedFile)$size < 1000000){
       unlink(downloadedFile)
 
       #Try to download from dropbox
       downloader::download(url = "https://www.dropbox.com/s/9g39xyvlpfapowj/RKEELjars.zip?dl=1", destfile = downloadedFile)
 
-      if(file.size(downloadedFile) < 1000000){
+      if(file.info(downloadedFile)$size < 1000000){
         unlink(downloadedFile)
         warning("Jar files could not be downloaded.")
       }

@@ -1,8 +1,8 @@
 Package: RKEELjars
 Type: Package
 Title: Java Executable .jar Files for 'RKEEL'
-Version: 1.0.8
-Date: 2016-01-29
+Version: 1.0.9
+Date: 2016-01-31
 Authors@R: c(
 	person("Jose", "Moyano", email = "i02momuj@uco.es", role = c("aut", "cre")),
 	person("Luciano", "Sanchez Ramos", email = "luciano@uniovi.es", role = "aut")
@@ -13,6 +13,6 @@ Description: KEEL is a popular Java software for a large number of different kno
 License: GPL-3
 Imports: downloader
 NeedsCompilation: no
-Packaged: 2016-01-29 10:02:16 UTC; jose
+Packaged: 2016-01-31 11:41:04 UTC; jose
 Repository: CRAN
-Date/Publication: 2016-01-29 11:20:46
+Date/Publication: 2016-01-31 16:36:47
