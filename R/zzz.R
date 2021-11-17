@@ -1,7 +1,7 @@
 require(downloader)
 require(utils)
 
-.onAttach <- function(libname = find.package("RKEELjars"), pkgname = "RKEELjars") {
+.onLoad <- function(libname = find.package("RKEELjars"), pkgname = "RKEELjars") {
 
   #List of jar files to download
   downloadList <- c()
@@ -34,14 +34,14 @@ require(utils)
     #packageStartupMessage("Download RKEEL jars")
 
     #Try to download from uco
-    downloader::download(url = "https://github.com/i02momuj/RKEEL/raw/master/RKEELjars/RKEELjars.zip", destfile = downloadedFile, mode = "wb")
+    downloader::download(url = "https://github.com/i02momuj/RKEEL/raw/master/RKEELjars/RKEELjars.zip", destfile = downloadedFile, mode = "wb", timeout=120)
 
     #If download failed, download from other mirror
     if(file.info(downloadedFile)$size < 1000000){
       unlink(downloadedFile)
 
       #Try to download from dropbox
-      downloader::download(url = "http://www.uco.es/users/jmoyano/RKEELjars.zip", destfile = downloadedFile, mode = "wb")
+      downloader::download(url = "http://www.uco.es/users/jmoyano/RKEELjars.zip", destfile = downloadedFile, mode = "wb", timeout=120)
 
       if(file.info(downloadedFile)$size < 1000000){
         unlink(downloadedFile)
